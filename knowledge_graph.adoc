@@ -17,7 +17,7 @@ A topic database will provide the framework upon which online courses can be bas
 
 CAVEAT: We want the journey through the space of topics to be flexible. Hurrah! Use a graph!
 
-= What is a graph?
+== What is a graph?
 
 //hide
 [source,cypher]
@@ -50,6 +50,11 @@ MATCH n RETURN n as node;
 
 //graph
 
-= Why is it useful?
+== Why is it useful?
+
+//list
+. Easy to explore relationships between topics
+. Natural way for mapping out relationships between topics
+. Graph theory to help us pick journeys though digital enlightenment
 
 Employ neo4j tech and cypher language to build
