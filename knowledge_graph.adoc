@@ -1,6 +1,6 @@
 = Building a Knowledge Graph
 
 We want to build an online learning platform with the following attributes:
-*a) it will contain all topics for digital enlightenment
-*b) the set of topics that a user will explore will depend on who the user is
-*c) the delivery method (learning experience) will adjust to who the user is
+* a) it will contain all topics for digital enlightenment
+- b) the set of topics that a user will explore will depend on who the user is
+* c) the delivery method (learning experience) will adjust to who the user is
