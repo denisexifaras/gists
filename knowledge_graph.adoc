@@ -1,11 +1,19 @@
 = Building a Knowledge Graph
 
-We want to build an online learning platform with the following attributes:
+== Why a Knowledge Graph?
+
+There are two main motivations.
+
+First, we would like to be create a reference database of "knowledge" that will map out the themes in digital enlightenment. This is interesting in its own right, for example in order to allow to modularise content for the day course or workshops. An extensive topic database can be used as a reference for creating "bespoke" courses, or for extending/modifying "standard" courses.
+
+Second, we want to build an online learning platform with the following attributes:
 //list
 [loweralpha]
 . it will contain all topics for digital enlightenment
 . the set of topics that a user will explore will depend on who the user is
 . the delivery method (learning experience) will adjust to who the user is
+
+A topic database will provide the framework upon which online courses can be based.
 
 CAVEAT: We want the journey through the space of topics to be flexible. Hurrah! Use a graph!
 
@@ -25,16 +33,16 @@ CREATE
 (html:Topic {name:"html"}),
 (html)-[:RT]->(web),
 (js:Topic {name:"JavaScript"}),
-(js)-[:RT]->(web),
-(js)-[:RT]->(ct),
+(js)-[:related]->(web),
+(js)-[:related]->(ct),
 
 (python:Topic {name:"Python"}),
-(python)-[:RT]->(data),
-(python)-[:RT]->(ct),
+(python)-[:related]->(data),
+(python)-[:related]->(ct),
 
 (cloud:Topic {name:"Cloud"}),
-(cloud)-[:RT]->(data),
-(cloud)-[:RT]->(web);
+(cloud)-[:related]->(data),
+(cloud)-[:related]->(web);
 
 MATCH n RETURN n as node;
 
