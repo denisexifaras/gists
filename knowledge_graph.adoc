@@ -11,6 +11,7 @@ CAVEAT: We want the journey through the space of topics to be flexible. Hurrah! 
 
 = What is a graph?
 
+//hide
 [source,cypher]
 ----
 CREATE
