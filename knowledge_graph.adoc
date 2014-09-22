@@ -53,8 +53,20 @@ MATCH n RETURN n as node;
 == Why is it useful?
 
 //list
-. Easy to explore relationships between topics
+. Easy to explore relationships between topics (visually)
 . Natural way for mapping out relationships between topics
 . Graph theory to help us pick journeys though digital enlightenment
 
-Employ neo4j tech and cypher language to build
+== Strategy/Approach
+
+We can use the Neo4j technology and the cypher language (graph query language) to create and explore the knowledge graph. Neo4j has paid-for services but so far I've been using the free tools locally on my machine. All scripts are uploaded on my decoded google drive.
+
+//list
+
+. Obtain a list of topics (by.....)
+
+== Where are we?
+
+//list
+. List of topics (212 and counting)
+. Just under 4300 relationships between them
