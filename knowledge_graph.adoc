@@ -20,10 +20,12 @@ CREATE
 (data:Field {name:"Data"}),
 (web:Field {name:"Web"});
 
-MATCH n RETURN n;
+MATCH n RETURN n as node;
 
 
 ----
+
+//graph
 
 = Why is it useful?
 
