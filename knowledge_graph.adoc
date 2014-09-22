@@ -19,10 +19,23 @@ CREATE
 //Fields
 (ct:Field {name:"Comp. Thinking"}),
 (data:Field {name:"Data"}),
-(web:Field {name:"Web"});
+(web:Field {name:"Web"}),
+
+(html:Topic {name:"html"}),
+(html)-[:RT]->(web),
+(js:Topic {name:"JavaScript"}),
+(js)-[:RT]->(web),
+(js)-[:RT]->(ct),
+
+(python:Topic {name:"Python"}),
+(python)-[:RT]->(data),
+(python)-[:RT]->(ct),
+
+(cloud:Topic {name:"Cloud"}),
+(cloud)-[:RT]->(data),
+(cloud)-[:RT]->(web),
 
 MATCH n RETURN n as node;
-
 
 ----
 
