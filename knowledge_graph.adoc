@@ -18,8 +18,9 @@ CREATE
 //Fields
 (ct:Field {name:"Comp. Thinking"}),
 (data:Field {name:"Data"}),
-(web:Field {name:"Web"}),
+(web:Field {name:"Web"});
 
+MATCH n RETURN n;
 
 
 ----
