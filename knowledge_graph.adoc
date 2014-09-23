@@ -94,19 +94,23 @@ anchor:anchor-2[]
   
 
     `Fields' are the main areas that collectively capture all concepts in digital enlightenment. For someone to be
-    truely digitally enlightened, they must have sufficiently explored all `Fields'.
+    truly digitally enlightened, they must have sufficiently explored all `Fields'.
 
-         |      *Comp. Thinking*       |       *Data*      |      *Security*      |      *Web*       |       *Hardware*      |
+         |      Comp. Thinking       |       Data      |      Security      |      Web       |       Hardware      |
 
-  - *Themes* (e.g. Coding, Analytics) & SubThemes (e.g. Statistics, Machine Learning) & SubSubTheme (e.g. Machine Learning: Unsupervised)
+  - *Themes* (e.g. Coding, Analytics) & *SubThemes* (e.g. Statistics, Machine Learning) & SubSubTheme (e.g. Machine Learning: Unsupervised)
+    
+    `Themes' are higher level concepts but ultimately belong under one or more of the `Fields'. `SubThemes' (and SubSubThemes and so on...)
+    are not broad enough to be Themes but are too conceptual to be classified as `Topics'.  `Themes', SubThemes and
+    so on should be well known for us to decide which ones need to be covered/explored.
     
   - *Topics* (e.g. HTML5) + SubTopics (e.g. SVG)
     
   - *Cases* (topics that are hard to categorize)
-  anchor:anchor-2[]
+
   
 * *Add a node to the graph for each of the above*
-anchor:anchor-2[]
+
 
 * *Create `links' between nodes that are related in a very obvious way.* At this stage, edges are bidirectional and 
 carry equal weight. (this will eventually have to be revised...)
