@@ -50,7 +50,7 @@ MATCH n RETURN n as node;
 
 //graph
 
-== Why is it useful?
+=== Why is it useful?
 
 //list
 . Easy to explore relationships between topics (visually)
@@ -59,14 +59,15 @@ MATCH n RETURN n as node;
 
 == Strategy/Approach
 
-===The tools
+=== The tools
 
 We can use the Neo4j technology and the cypher language (graph query language) to create and explore the knowledge graph. 
 Neo4j has paid-for services but so far I've been using the free tools locally on my machine. All scripts are uploaded 
 on my decoded google drive. We should discuss moving that to a decoded github folder.
 
-===Creating the topic space
+=== Creating the topic space
 //list
+.Bulleted
 . Obtain a list of topics looking through all our presentations and table of contents from online books
 . Identify common themes and fields to obtain a higher level view of what digital enlightenment is about.
 . Create a hierarchy of topics/concepts in order to construct the graph
