@@ -122,12 +122,12 @@ anchor:anchor-2[]
 
 What is "Data" directly related to?
 
-image::http://s25.postimg.org/xh06ntxfj/historical_figures_html.png[]
+image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
 anchor:anchor-2[]
 
 And "Security"?
 
-image::https://drive.google.com/a/decoded.co/#folders/0B-4WcNJm4hcPaktZRzdtYkZYaGM[]
+image::http://s25.postimg.org/g7jpp87lr/security_1d.png[]
 
 anchor:anchor-2[]
 
@@ -135,10 +135,23 @@ There doesn't seem to be that much overlap... But what about the wider neighbour
 nodes that are separated by at most 2-degrees, there are more than 800 results and 2000 relationships! So, for the sake
 of visualisation, look just at the themes and subthemes:
 
-image::https://drive.google.com/a/decoded.co/#folders/0B-4WcNJm4hcPaktZRzdtYkZYaGM[]
+image::http://s25.postimg.org/6oa0vrk3j/security_2d_theme_subtheme.png[]
 
 anchor:anchor-2[]
 The graph allows us to see relationships, themes and patterns between topics that might have normally seemed unrelated...
+
+anchor:anchor-2[]
+It also shows us possible journeys throught the space of digital enlightenment. 
+anchor:anchor-2[]
+
+However, the graph may also be a useful resouce for decoded internally. For example, what are all the historical figures
+that we refer to?
+
+image::http://s25.postimg.org/nz0fnsbr3/historical_figures.png[]
+
+And which of these are related to HMTL5?
+
+image::http://s25.postimg.org/xh06ntxfj/historical_figures_html.png[]
 
 == Where are we?
 
