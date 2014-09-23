@@ -122,12 +122,12 @@ anchor:anchor-2[]
 
 What is "Data" directly related to?
 
-image::/Users/dionysiakiaraxifara/Documents/Decoded/E_Learning/neo4j-community-2.1.3_trial/img/data_1d.png[]
+image::https://drive.google.com/a/decoded.co/#folders/0B-4WcNJm4hcPaktZRzdtYkZYaGM[]
 anchor:anchor-2[]
 
 And "Security"?
 
-image::/Users/dionysiakiaraxifara/Documents/Decoded/E_Learning/neo4j-community-2.1.3_trial/img/security_1d.png[]
+image::https://drive.google.com/a/decoded.co/#folders/0B-4WcNJm4hcPaktZRzdtYkZYaGM[]
 
 anchor:anchor-2[]
 
@@ -135,7 +135,7 @@ There doesn't seem to be that much overlap... But what about the wider neighbour
 nodes that are separated by at most 2-degrees, there are more than 800 results and 2000 relationships! So, for the sake
 of visualisation, look just at the themes and subthemes:
 
-image::/Users/dionysiakiaraxifara/Documents/Decoded/E_Learning/neo4j-community-2.1.3_trial/img/security_2d_theme_subtheme.png[]
+image::https://drive.google.com/a/decoded.co/#folders/0B-4WcNJm4hcPaktZRzdtYkZYaGM[]
 
 anchor:anchor-2[]
 The graph allows us to see relationships, themes and patterns between topics that might have normally seemed unrelated...
