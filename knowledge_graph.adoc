@@ -97,6 +97,7 @@ anchor:anchor-2[]
     truely digitally enlightened, they must have sufficiently explored all `Fields'.
 
     ++++
+    <p>
     <table border="1">
     <tr><td>Comp. Thinking<td>Data<td>Security<td>Web<td>Hardware
     </table>
