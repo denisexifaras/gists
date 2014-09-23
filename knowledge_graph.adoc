@@ -100,8 +100,7 @@ anchor:anchor-2[]
 
   - *Themes* (e.g. Coding, Analytics) & *SubThemes* (e.g. Statistics, Machine Learning) & SubSubTheme (e.g. Machine Learning: Unsupervised)
     
-    `Themes' are higher level concepts but ultimately belong under one or more of the `Fields'. `SubThemes' (and SubSubThemes and so on...)
-    are not broad enough to be Themes but are too conceptual to be classified as `Topics'.  `Themes', SubThemes and
+    `Themes' are higher level concepts but ultimately belong under one or more of the `Fields'. `SubThemes' (and SubSubThemes and so on...) are not broad enough to be Themes but are too conceptual to be classified as `Topics'.  `Themes', SubThemes and
     so on should be well known for us to decide which ones need to be covered/explored.
     
   - *Topics* (e.g. HTML5) + SubTopics (e.g. SVG)
