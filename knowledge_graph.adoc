@@ -90,8 +90,8 @@ on my decoded google drive. We should discuss moving that to a decoded github fo
 [source,cypher]
 ----
 
-MATCH (a {name:"JavaScript"})-[r:RT]->(a2 {name:"Data"})
-RETURN a,a2;
+MATCH (a {name:"JavaScript"})-[r:related]->(a2 {name:"Data"})
+RETURN a,a2 as node;
 
 ----
 
