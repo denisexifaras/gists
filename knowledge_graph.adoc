@@ -129,7 +129,7 @@ RETURN a,a2 as node;
 JavaScript is not very obviously a language that is associated with `Data'. We should therefore not have any edges 
 between them, and indeed the result is NULL:
 
-//graph_result
+//table_result
 
 [source,cypher]
 ----
