@@ -122,7 +122,7 @@ anchor:anchor-2[]
 
 What is "Data" directly related to?
 
-image::https://drive.google.com/a/decoded.co/#folders/0B-4WcNJm4hcPaktZRzdtYkZYaGM[]
+image::https://www.dropbox.com/s/pjacvrq7d0az89h/data_1d.png[]
 anchor:anchor-2[]
 
 And "Security"?
