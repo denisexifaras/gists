@@ -96,7 +96,9 @@ anchor:anchor-2[]
     `Fields' are the main areas that collectively capture all concepts in digital enlightenment. For someone to be
     truely digitally enlightened, they must have sufficiently explored all `Fields'.
 
-    
+    <table border="1">
+    <tr><td>Comp. Thinking<td>Data<td>Security<td>Web<td>Hardware
+    </table>
 
   - *Themes* (e.g. Coding, Analytics) & SubThemes (e.g. Statistics, Machine Learning) & SubSubTheme (e.g. Machine Learning: Unsupervised)
     anchor:anchor-2[]
