@@ -82,11 +82,13 @@ on my decoded google drive. We should discuss moving that to a decoded github fo
 ----
 
 MATCH (a {name:"JavaScript"})-[r:related]->(a2), (b {name:"Data"})-[q:related]->(b2)
-RETURN a,b;
+RETURN a,b, a.name, b.name;
 
 ----
 
 //graph
+
+//table
 
 == Where are we?
 
