@@ -91,7 +91,8 @@ on my decoded google drive. We should discuss moving that to a decoded github fo
   - Topics (e.g. HTML5) + SubTopics (e.g. SVG)
   - ``Cases'' (topics that are hard to categorize)
 * Add a node to the graph for each of the above
-* Create `links' between nodes that are related in a very obvious way.
+* Create `links' between nodes that are related in a very obvious way. At this stage, edges are bidirectional and 
+carry equal weight. (this will eventually have to be revised...)
 
 
 [source,cypher]
@@ -115,14 +116,32 @@ just first-degree relationships, we start seeing the relationship between two to
 
 //graph_result
 
-//table
+Let's consider some examples from the real database!
 
-Check out what the 2-degree relationship between JavaScript and Data looks like in the full database!
-The graph allows us to see the relationship between topics that might have normally seemed unrelated...
+anchor:anchor-2[]
+
+What is "Data" directly related to?
+
+image::/Users/dionysiakiaraxifara/Documents/Decoded/E_Learning/neo4j-community-2.1.3_trial/img/data_1d.png[]
+anchor:anchor-2[]
+
+And "Security"?
+
+image::/Users/dionysiakiaraxifara/Documents/Decoded/E_Learning/neo4j-community-2.1.3_trial/img/security_1d.png[]
+
+anchor:anchor-2[]
+
+There doesn't seem to be that much overlap... But what about the wider neighbourhood around Security? If we look at all
+nodes that are separated by at most 2-degrees, there are more than 800 results and 2000 relationships! So, for the sake
+of visualisation, look just at the themes and subthemes:
+
+image::/Users/dionysiakiaraxifara/Documents/Decoded/E_Learning/neo4j-community-2.1.3_trial/img/security_2d_theme_subtheme.png[]
+
+anchor:anchor-2[]
+The graph allows us to see relationships, themes and patterns between topics that might have normally seemed unrelated...
 
 == Where are we?
 
-image::http://www.sarahmei.com/blog/wp-content/uploads/2013/11/Screen-Shot-2013-11-09-at-8.11.30-PM.png[]
 
 == Test?
 //list
