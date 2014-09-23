@@ -90,10 +90,12 @@ anchor:anchor-2[]
 * Create a hierarchy of topics/concepts in order to construct the graph and better understand the landscape of digital enlightenment:
   - *Fields* (Computational Thinking, Data, Security, Web, Hardware)
     anchor:anchor-1[]
+    +
     ----
     `Fields' are the main areas that collectively capture all concepts in digital enlightenment. For someone to be
     truely digitally enlightened, they must have sufficiently explored all `Fields'.
     ----
+    +
     anchor:anchor-1[]
   - Themes (e.g. Coding, Analytics) & SubThemes (e.g. Statistics, Machine Learning) & SubSubTheme (e.g. Machine Learning: Unsupervised)
     anchor:anchor-1[]
