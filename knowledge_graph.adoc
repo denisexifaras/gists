@@ -59,11 +59,23 @@ MATCH n RETURN n as node;
 
 == Strategy/Approach
 
-We can use the Neo4j technology and the cypher language (graph query language) to create and explore the knowledge graph. Neo4j has paid-for services but so far I've been using the free tools locally on my machine. All scripts are uploaded on my decoded google drive.
+===The tools
 
+We can use the Neo4j technology and the cypher language (graph query language) to create and explore the knowledge graph. 
+Neo4j has paid-for services but so far I've been using the free tools locally on my machine. All scripts are uploaded 
+on my decoded google drive. We should discuss moving that to a decoded github folder.
+
+===Creating the topic space
 //list
-
-. Obtain a list of topics (by.....)
+. Obtain a list of topics looking through all our presentations and table of contents from online books
+. Identify common themes and fields to obtain a higher level view of what digital enlightenment is about.
+. Create a hierarchy of topics/concepts in order to construct the graph
+.. Fields (Computational Thinking, Data, Security, Web, Hardware)
+.. Themes (e.g. Coding, Analytics) & SubThemes (e.g. Statistics, Machine Learning) & SubSubTheme (e.g. Machine Learning: Unsupervised)
+.. Topics (e.g. HTML5) + SubTopics (e.g. SVG)
+.. ``Cases'' (topics that are hard to categorize)
+. Add a node to the graph for each of the above
+. Create `links' between nodes that are related in a very obvious way.
 
 == Where are we?
 
