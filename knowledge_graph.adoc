@@ -90,39 +90,7 @@ on my decoded google drive. We should discuss moving that to a decoded github fo
 [source,cypher]
 ----
 
-MATCH (n)-[r]->() DELETE n,r;
-MATCH (n) DELETE n;
-
 CREATE
-
-//Fields
-(ct:Field {name:"Comp. Thinking"}),
-(data:Field {name:"Data"}),
-(web:Field {name:"Web"}),
-(data)-[:related]->(web),
-(data)-[:related]->(ct),
-(ct)-[:related]->(web),
-
-
-(html:Topic {name:"html"}),
-(html)-[:RT]->(web),
-(js:Topic {name:"JavaScript"}),
-(js)-[:related]->(web),
-(js)-[:related]->(ct),
-(web)-[:related]->(js),
-(ct)-[:related]->(js),
-
-(python:Topic {name:"Python"}),
-(python)-[:related]->(data),
-(python)-[:related]->(ct),
-(ct)-[:related]->(python),
-(data)-[:related]->(python),
-
-(cloud:Topic {name:"Cloud"}),
-(cloud)-[:related]->(data),
-(cloud)-[:related]->(web),
-(data)-[:related]->(cloud),
-(web)-[:related]->(cloud),
 
 (jquery:SubTopic {name:"jQuery", parent_topic:["JavaScript"]}),
 (jquery)-[:related]->(js),
