@@ -51,9 +51,9 @@ CREATE
 (cloud)-[:related]->(data),
 (cloud)-[:related]->(web),
 (data)-[:related]->(cloud),
-(web)-[:related]->(cloud)
+(web)-[:related]->(cloud);
 
-MATCH n RETURN n as node
+MATCH n RETURN n as node;
 
 ----
 
@@ -99,16 +99,22 @@ CREATE
 (data)-[:related]->(jquery),
 (js)-[:related]->(jquery);
 
-MATCH (a {name:"JavaScript"})-[r:related]->(a2 {name:"Data"})
-RETURN a,a2 as node
+----
 
-MATCH (a {name:"JavaScript"})-->(b)-->(a2 {name:"Data"})
-RETURN a,b,a2
+[source,cypher]
+----
+MATCH (a {name:"JavaScript"})-[r:related]->(a2 {name:"Data"})
+RETURN a,a2 as node;
 
 ----
-////
-//graph
-////
+//graph_result
+
+MATCH (a {name:"JavaScript"})-->(b)-->(a2 {name:"Data"})
+RETURN a,b,a2;
+
+----
+
+//graph_result
 
 //table
 
