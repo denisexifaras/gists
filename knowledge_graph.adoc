@@ -80,7 +80,7 @@ We can use the Neo4j technology and the cypher language (graph query language) t
 Neo4j has paid-for services but so far I've been using the free tools locally on my machine. All scripts are uploaded 
 on my decoded google drive. We should discuss moving that to a decoded github folder.
 
-=== Creating the topic space
+=== Defining the topic space
 //list
 
 * Obtain a list of topics looking through all our presentations and table of contents from online books
@@ -98,16 +98,19 @@ anchor:anchor-2[]
 
          |      Comp. Thinking       |       Data      |      Security      |      Web       |       Hardware      |
 
-  - *Themes* (e.g. Coding, Analytics) & *SubThemes* (e.g. Statistics, Machine Learning) & SubSubTheme (e.g. Machine Learning: Unsupervised)
+  - *Themes*,  *SubThemes* & *SubSubThemes*
     
     `Themes' are higher level concepts but ultimately belong under one or more of the `Fields'. `SubThemes' (and SubSubThemes and so on...) are not broad enough to be Themes but are too conceptual to be classified as `Topics'.  `Themes', SubThemes and
     so on should be well known for us to decide which ones need to be covered/explored.
+    
+    An example: Themes {Coding, Analytics} SubThemes {Statistics, Machine Learning} SubSubTheme {Machine Learning: Unsupervise}
     
   - *Topics* (e.g. HTML5) + SubTopics (e.g. SVG)
     
   - *Cases* (topics that are hard to categorize)
 
-  
+=== Creating a graph
+//list
 * *Add a node to the graph for each of the above*
 
 
