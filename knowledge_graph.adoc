@@ -81,7 +81,14 @@ on my decoded google drive. We should discuss moving that to a decoded github fo
 [source,cypher]
 ----
 
-MATCH (n) RETURN n;
+MATCH (a {name:"JavaScript"})-[r:RT]->(a2), (b {name:"Data"})-[q:RT]->(b2)
+RETURN a,b;
+
+MATCH (a {name:"JavaScript"})-[r:RT]->(a2 {name:"Data"})
+RETURN a,a2;
+
+MATCH (a {name:"JavaScript"})-->(b)-->(a2 {name:"Data"})
+RETURN a,b,a2;
 
 ----
 
