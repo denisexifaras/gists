@@ -100,6 +100,7 @@ CREATE
 (js)-[:related]->(jquery);
 
 ----
+//graph_result
 
 [source,cypher]
 ----
@@ -109,9 +110,10 @@ RETURN a,a2 as node;
 ----
 //graph_result
 
+[source,cypher]
+----
 MATCH (a {name:"JavaScript"})-->(b)-->(a2 {name:"Data"})
 RETURN a,b,a2;
-
 ----
 
 //graph_result
