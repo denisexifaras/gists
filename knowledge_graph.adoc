@@ -92,7 +92,7 @@ RETURN a,b,a2;
 
 ----
 
-//table
+//graph
 
 == Where are we?
 
