@@ -99,6 +99,9 @@ on my decoded google drive. We should discuss moving that to a decoded github fo
 MATCH (a {name:"JavaScript"})-[r:related]->(a2 {name:"Data"})
 RETURN a,a2 as node;
 ----
+JavaScript is not very obviously a language that is associated with `Data'. We should therefore not have any edges 
+between them, and indeed the result is NULL:
+
 //graph_result
 
 [source,cypher]
@@ -106,9 +109,16 @@ RETURN a,a2 as node;
 MATCH (a {name:"JavaScript"})-[r:related]->(b)-[q:related]->(a2 {name:"Data"})
 RETURN a,b,a2;
 ----
+
+However, jQuery is very obviously associated both with JavaScript and with Data. Whenever we don't limit ourselves to
+just first-degree relationships, we start seeing the relationship between two topics within a wider context:
+
 //graph_result
 
 //table
+
+Check out what the 2-degree relationship between JavaScript and Data looks like in the full database!
+The graph allows us to see the relationship between topics that might have normally seemed unrelated...
 
 == Where are we?
 
