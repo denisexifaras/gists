@@ -69,7 +69,6 @@ on my decoded google drive. We should discuss moving that to a decoded github fo
 //list
 .Bulleted
 * Obtain a list of topics looking through all our presentations and table of contents from online books
-  image::http://www.sarahmei.com/blog/wp-content/uploads/2013/11/Screen-Shot-2013-11-09-at-8.11.30-PM.png[]
 * Identify common themes and fields to obtain a higher level view of what digital enlightenment is about.
 * Create a hierarchy of topics/concepts in order to construct the graph
   - Fields (Computational Thinking, Data, Security, Web, Hardware)
@@ -81,6 +80,9 @@ on my decoded google drive. We should discuss moving that to a decoded github fo
 
 == Where are we?
 
+image::http://www.sarahmei.com/blog/wp-content/uploads/2013/11/Screen-Shot-2013-11-09-at-8.11.30-PM.png[]
+
+== Test?
 //list
 . List of topics (212 and counting)
 . Just under 4300 relationships between them
