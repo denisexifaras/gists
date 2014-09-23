@@ -126,14 +126,20 @@ CREATE
 
 (jquery:SubTopic {name:"jQuery", parent_topic:["JavaScript"]}),
 (jquery)-[:related]->(js),
-(jquery)-[:related]->(data);
+(jquery)-[:related]->(data),
+(data)-[:related]->(jquery),
+(js)-[:related]->(jquery);
 
 MATCH (a {name:"JavaScript"})-[r:related]->(a2 {name:"Data"})
 RETURN a,a2 as node;
 
-----
+MATCH (a {name:"JavaScript"})-->(b)-->(a2 {name:"Data"})
+RETURN a,b,a2;
 
+----
+////
 //graph
+////
 
 //table
 
