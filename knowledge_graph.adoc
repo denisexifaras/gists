@@ -51,9 +51,9 @@ CREATE
 (cloud)-[:related]->(data),
 (cloud)-[:related]->(web),
 (data)-[:related]->(cloud),
-(web)-[:related]->(cloud);
+(web)-[:related]->(cloud)
 
-MATCH n RETURN n as node;
+MATCH n RETURN n as node
 
 ----
 
@@ -87,6 +87,7 @@ on my decoded google drive. We should discuss moving that to a decoded github fo
 * Add a node to the graph for each of the above
 * Create `links' between nodes that are related in a very obvious way.
 
+//hide
 [source,cypher]
 ----
 
@@ -99,10 +100,10 @@ CREATE
 (js)-[:related]->(jquery);
 
 MATCH (a {name:"JavaScript"})-[r:related]->(a2 {name:"Data"})
-RETURN a,a2 as node;
+RETURN a,a2 as node
 
 MATCH (a {name:"JavaScript"})-->(b)-->(a2 {name:"Data"})
-RETURN a,b,a2;
+RETURN a,b,a2
 
 ----
 ////
