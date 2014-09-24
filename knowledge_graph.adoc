@@ -175,12 +175,12 @@ RETURN n;
 ----
 CREATE
 
-(a {name:"Input"})-[:related]->(b {name:"Data"}),
-(c {name:"Data"})-[:related]->(d {name:"Input"}),
+(a {name:"Input"})-[:related]->(b:Field {name:"Data"}),
+(b {name:"Data"})-[:related]->(a {name:"Input"}),
 (e {name:"Servers"})-[:related]->(f {name:"Cloud"}),
-(g {name:"Cloud"})-[:related]->(h {name:"Servers"}),
-(i {name:"UN Data"})-[:related]->(j {name:"Data"}),
-(k {name:"Data"})-[:related]->(l {name:"UN Data"});
+(f {name:"Cloud"})-[:related]->(e {name:"Servers"}),
+(i {name:"UN Data"})-[:related]->(b {name:"Data"}),
+(b {name:"Data"})-[:related]->(i {name:"UN Data"});
 
 ----
 //graph
