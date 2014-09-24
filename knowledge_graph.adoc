@@ -173,14 +173,14 @@ RETURN n;
   
 [source,cypher]
 ----
-CREATE
 
-(a {name:"Input"})-[:related]->(b:Field {name:"Data"}),
-(b)-[:related]->(a),
-(e {name:"Servers"})-[:related]->(f {name:"Cloud"}),
-(f)-[:related]->(e),
-(i {name:"UN Data"})-[:related]->(b),
-(b)-[:related]->(i);
+MATCH (data {name:"Data"}), (servers {name:"Servers"}), (input {name:"Input"}), (cloud {name:"Input"}), (undata {name:"UN Data"})
+CREATE (data)-[:related]->(input)
+CREATE (data)<-[:related]-(input)
+CREATE (servers)-[:related]->(cloud)
+CREATE (servers)<-[:related]-(cloud)
+CREATE (undata)-[:related]->(data)
+CREATE (undata)<-[:related]-(data);
 
 ----
 //graph
