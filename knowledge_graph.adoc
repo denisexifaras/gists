@@ -145,7 +145,20 @@ anchor:anchor-2[]
 //hidden
 [source,cypher]
 ----
-MATCH (n)-[:related]->(b) RETURN n;
+
+CREATE 
+
+(undata:Website {name:"UN Data", url:"http://data.un.org/"}),
+
+(google_fusion:Tools {name:"Google Fusion Tables", url:"https://support.google.com/fusiontables/answer/2571232"}),
+
+(input:Topic {name:"Input"}),
+
+(servers:Topic {name:"Servers"});
+
+MATCH (n:Website), (a) WHERE a.name = "Input" OR a.name="Servers
+RETURN n,a;
+
 ----
 //graph_results
 
