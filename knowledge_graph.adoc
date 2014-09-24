@@ -174,9 +174,10 @@ RETURN n;
 [source,cypher]
 ----
 CREATE
+
 (input)-[:related]->(data),
 (data)-[:related]->(input),
-(servers)-[:related]->(cloud), //not jQuery!
+(servers)-[:related]->(cloud),
 (cloud)-[:related]->(servers),
 (undata)-[:related]->(data);
 
@@ -185,6 +186,7 @@ RETURN n,r,a;
 
 ----
 //graph_result
+//table
 
   NOTE: Edges are are added only if two nodes are related in a very obvious way (for example Google Fusion has not been linked to anything). Obviously the more edges the more flexbile the journey through the graph can be, but this has to balance with a sensible number of possible journeys and journey architecture. For example, Google Doc -> Data Store but Google Doc !-> Data. This highlights the importance of looking further away then 1st degree relationships whenever we are exploring the graph.
   
