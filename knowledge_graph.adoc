@@ -175,18 +175,15 @@ RETURN n;
 ----
 CREATE
 
-(input)-[:related]->(data),
-(data)-[:related]->(input),
-(servers)-[:related]->(cloud),
-(cloud)-[:related]->(servers),
-(undata)-[:related]->(data);
-
-MATCH (n)-[r:related]->(a)
-RETURN n,r,a;
+(a {name:"Input"})-[:related]->(b {name:"Data"}),
+(b {name:"Data"})-[:related]->(a {name:"Input"}),
+(a {name:"Servers"})-[:related]->(b {name:"Cloud"}),
+(b {name:"Cloud")-[:related]->(a {name:"Servers"}),
+(a {name:"UN Data"})-[:related]->(b {name:"Data"}),
+(a {name:"Data"})-[:related]->(b {name:"UN Data"});
 
 ----
-//graph_result
-//table
+//graph
 
   NOTE: Edges are are added only if two nodes are related in a very obvious way (for example Google Fusion has not been linked to anything). Obviously the more edges the more flexbile the journey through the graph can be, but this has to balance with a sensible number of possible journeys and journey architecture. For example, Google Doc -> Data Store but Google Doc !-> Data. This highlights the importance of looking further away then 1st degree relationships whenever we are exploring the graph.
   
