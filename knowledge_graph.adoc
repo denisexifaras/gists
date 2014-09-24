@@ -174,7 +174,7 @@ RETURN n;
 [source,cypher]
 ----
 
-MATCH (data {name:"Data"}), (servers {name:"Servers"}), (input {name:"Input"}), (cloud {name:"Input"}), (undata {name:"UN Data"})
+MATCH (data {name:"Data"}), (servers {name:"Servers"}), (input {name:"Input"}), (cloud {name:"Cloud"}), (undata {name:"UN Data"})
 CREATE (data)-[:related]->(input)
 CREATE (data)<-[:related]-(input)
 CREATE (servers)-[:related]->(cloud)
