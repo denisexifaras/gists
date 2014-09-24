@@ -171,7 +171,18 @@ RETURN n;
 
   At this stage, edges are bidirectional and carry equal weight. This will eventually have to be revised... for example, some relationships are stronger than others (e.g. html with html5 vs xml and file formats)
   
-  NOTE: Edges are are added only if two nodes are related in a very obvious way. Obviously the more edges the more flexbile the journey through the graph can be, but this has to balance with a sensible number of possible journeys and journey architecture. For example, Google Doc -> Data Store but Google Doc !-> Data. This highlights the importance of looking further away then 1st degree relationships whenever we are exploring the graph.
+[source,cypher]
+----
+CREATE
+(input)-[:related]->(data),
+(data)-[:related]->(input),
+(servers)-[:related]->(cloud), //not jQuery!
+(cloud)-[:related]->(servers),
+(undata)-[:related]->(data);
+----
+//graph_results
+
+  NOTE: Edges are are added only if two nodes are related in a very obvious way (for example Google Fusion has not been linked to anything). Obviously the more edges the more flexbile the journey through the graph can be, but this has to balance with a sensible number of possible journeys and journey architecture. For example, Google Doc -> Data Store but Google Doc !-> Data. This highlights the importance of looking further away then 1st degree relationships whenever we are exploring the graph.
   
   *The process of adding edges should be supervised by more than one person....*
 
