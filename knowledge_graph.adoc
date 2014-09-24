@@ -212,9 +212,7 @@ just first-degree relationships, we start seeing the relationship between two to
 
 //graph_result
 
-Let's consider some examples from the real database!
-
-anchor:anchor-2[]
+== The actual Graph Database
 
 What is "Data" directly related to?
 
@@ -258,6 +256,7 @@ image::http://s25.postimg.org/e2r4my1kv/people_html5.png[]
 
   Shall we try and look at them all from the real data base?
 
-. Just under 4300 relationships between them
+. Just under 1500 relationships between them
 
 
+== Next Steps
