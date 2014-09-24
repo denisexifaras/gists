@@ -189,7 +189,7 @@ CREATE (undata)<-[:related]-(data);
   
   *The process of adding edges should be supervised by more than one person....*
 
-==== An example 
+=== An example - why we should explore distant graph relationships
 
 [source,cypher]
 ----
@@ -234,25 +234,30 @@ of visualisation, look just at the themes and subthemes:
 image::http://s25.postimg.org/6oa0vrk3j/security_2d_theme_subtheme.png[]
 
 anchor:anchor-2[]
+
 The graph allows us to see relationships, themes and patterns between topics that might have normally seemed unrelated...
 
 anchor:anchor-2[]
 It also shows us possible journeys throught the space of digital enlightenment. 
 anchor:anchor-2[]
 
-However, the graph may also be a useful resouce for decoded internally. For example, what are all the historical figures
+However, the graph may also be a useful resouce for decoded internally. For example, what are all the individuals
 that we refer to?
 
-image::http://s25.postimg.org/nz0fnsbr3/historical_figures.png[]
+image::http://s25.postimg.org/80jhwgd4v/people.png[]
 
 And which of these are related to HMTL5?
 
-image::http://s25.postimg.org/xh06ntxfj/historical_figures_html.png[]
+image::http://s25.postimg.org/e2r4my1kv/people_html5.png[]
 
 == Where are we?
 
-
-== Test?
 //list
 . List of topics (212 and counting)
+  .. The list of topics is not exhaustive (and I'm not sure yet whether we want it to be) 
+
+  Shall we try and look at them all from the real data base?
+
 . Just under 4300 relationships between them
+
+
