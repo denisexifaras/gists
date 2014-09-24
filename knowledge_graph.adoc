@@ -128,25 +128,30 @@ anchor:anchor-2[]
   
     Anything that is a bit too complicated to categorize is set as `Cases' -- for example something that could be a SubTopic of several topics. In principle this should change and allow nesting within multiple categories but my cypher is not good enough. Current examples of cases include: Pearson's chi-squared test, Timeseries and many others. Essentially `Cases' can also be Topics but it's simpler to have them as separate whenever an algorithm will look at hierarchy.
 
-=== Creating a graph
+== Creating a graph
+
+=== Collecting Nodes
 
 //list
-* *Add a node to the graph for each of the categories above*
+*Add a node to the graph for each of the categories above*
 
   A node should be anything that we envisage will hold data (information/slides/exercises). This can be anything from a field to a case.
 
   *The process of categorization/classification of nodes should be supervised by more than one person...*
 
-* *Create `links' between nodes that are related in a very obvious way.* 
+=== Adding Edges
+
+*Create `links' between nodes that are related in a very obvious way.* 
 
   Edges demonstrate the relationship between nodes. If two nodes are related then they have an edge that connects them.
 
   At this stage, edges are bidirectional and carry equal weight. This will eventually have to be revised... for example, some relationships are stronger than others (e.g. html with html5 vs xml and file formats)
   
-  NOTE: Edges are are added only if two nodes are related in a very obvious way. Obviously the more edges the more flexbile the journey through the graph can be, but this has to balance with a sensible number of possible journeys and journey architecture. For example, Google Doc -> Data Store but Google Doc !-> Data.
+  NOTE: Edges are are added only if two nodes are related in a very obvious way. Obviously the more edges the more flexbile the journey through the graph can be, but this has to balance with a sensible number of possible journeys and journey architecture. For example, Google Doc -> Data Store but Google Doc !-> Data. This highlights the importance of looking further away then 1st degree relationships whenever we are exploring the graph.
   
   *The process of adding edges should be supervised by more than one person....*
 
+==== An example 
 
 [source,cypher]
 ----
