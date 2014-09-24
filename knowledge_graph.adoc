@@ -157,7 +157,7 @@ CREATE
 (servers:Topic {name:"Servers"});
 
 MATCH (n)
-WHERE n:Website XOR (n.name = "Input" XOR n.name="Servers)
+WHERE n:Website
 RETURN n;
 
 ----
