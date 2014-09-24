@@ -178,7 +178,7 @@ CREATE
 (a {name:"Input"})-[:related]->(b {name:"Data"}),
 (b {name:"Data"})-[:related]->(a {name:"Input"}),
 (a {name:"Servers"})-[:related]->(b {name:"Cloud"}),
-(b {name:"Cloud")-[:related]->(a {name:"Servers"}),
+(b {name:"Cloud"})-[:related]->(a {name:"Servers"}),
 (a {name:"UN Data"})-[:related]->(b {name:"Data"}),
 (a {name:"Data"})-[:related]->(b {name:"UN Data"});
 
