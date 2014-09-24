@@ -156,7 +156,8 @@ CREATE
 
 (servers:Topic {name:"Servers"});
 
-MATCH (n:Website), (a) WHERE a.name = "Input" OR a.name="Servers
+MATCH (n:Website), (a) 
+WHERE a.name = "Input" OR a.name="Servers
 RETURN n,a;
 
 ----
