@@ -179,8 +179,12 @@ CREATE
 (servers)-[:related]->(cloud), //not jQuery!
 (cloud)-[:related]->(servers),
 (undata)-[:related]->(data);
+
+MATCH (n)-[r:related]->(a)
+RETURN n,r,a;
+
 ----
-//graph
+//graph_result
 
   NOTE: Edges are are added only if two nodes are related in a very obvious way (for example Google Fusion has not been linked to anything). Obviously the more edges the more flexbile the journey through the graph can be, but this has to balance with a sensible number of possible journeys and journey architecture. For example, Google Doc -> Data Store but Google Doc !-> Data. This highlights the importance of looking further away then 1st degree relationships whenever we are exploring the graph.
   
