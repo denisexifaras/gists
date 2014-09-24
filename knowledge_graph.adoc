@@ -107,9 +107,19 @@ anchor:anchor-2[]
     Themes {Coding, Analytics} 
     SubThemes {Statistics, Machine Learning} 
     SubSubTheme {Machine Learning: Unsupervise}
-    
-  - *Topics* (e.g. HTML5) + SubTopics (e.g. SVG)
-    
+
+  - *Topics* (e.g. HTML5) + *SubTopics* (e.g. SVG)
+  
+    The majority of the contents of the knowledge graph are probably going to be topics. These are specific learning items that may also have exercises etc. Subtopics allow us to nest topics if this is meaningful and useful.
+
+  - *Tools* (e.g. Google charts) 
+  
+    Tools should be linked to all other topics, themes etc to which they are relevant. If a tool is online, there should also be a url.
+
+  - *Websites* (e.g. Stackoverflow)
+  
+    Websites should be linked to all other topics, themes etc to which they are relevant. Websites should also have a url.
+
   - *Cases* (topics that are hard to categorize)
 
 === Creating a graph
