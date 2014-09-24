@@ -157,7 +157,7 @@ CREATE
 (servers:Topic {name:"Servers"});
 
 MATCH (n)
-WHERE n:Website
+WHERE n:Website OR n:Tools
 RETURN n;
 
 ----
