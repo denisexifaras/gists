@@ -156,9 +156,9 @@ CREATE
 
 (servers:Topic {name:"Servers"});
 
-MATCH (n:Website), (a) 
-WHERE a.name = "Input" OR a.name="Servers
-RETURN n,a;
+MATCH (n)
+WHERE n:Website OR (n.name = "Input" OR n.name="Servers)
+RETURN n;
 
 ----
 //graph_results
