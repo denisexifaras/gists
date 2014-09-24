@@ -176,11 +176,11 @@ RETURN n;
 CREATE
 
 (a {name:"Input"})-[:related]->(b:Field {name:"Data"}),
-(b {name:"Data"})-[:related]->(a {name:"Input"}),
+(b)-[:related]->(a),
 (e {name:"Servers"})-[:related]->(f {name:"Cloud"}),
-(f {name:"Cloud"})-[:related]->(e {name:"Servers"}),
-(i {name:"UN Data"})-[:related]->(b {name:"Data"}),
-(b {name:"Data"})-[:related]->(i {name:"UN Data"});
+(f)-[:related]->(e),
+(i {name:"UN Data"})-[:related]->(b),
+(b)-[:related]->(i);
 
 ----
 //graph
