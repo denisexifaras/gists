@@ -119,6 +119,92 @@ anchor:anchor-2[]
 
 === What have we collected?
 
+>300 topics by looking through all our presentations, table of contents from online books and brainstorming
+
+  Obviously this is not exhaustive but was not meant to be (will revisit this in a sec)!
+  
+  A node should be anything that we envisage will hold data (information/slides/exercises). This can be anything from a field to a case. There are tons of things that I have not included here (for example consider ToC from http://shop.oreilly.com/product/9780596805531.do) -- we should discuss the level of detail that this should have. For example should 'booleans' have their own node?
+  
+//hidden
+[source,cypher]
+----
+//Clear all
+MATCH (n)-[r]->() DELETE n,r;
+MATCH (n) DELETE n;
+
+CREATE
+
+(ct:Thing {name:"Comp. Thinking", description:"This is the philosophy behind programming.",importance:10}),
+(data:Thing {name:"Data", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}),
+(web:Thing {name:"Web", description:"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."}),
+(html:Thing {name:"html"}),
+(js:Thing {name:"JavaScript"}),
+(python:Thing {name:"Python",type:"Skill"}),
+(cloud:Thing {name:"Cloud",type:"Object"}),
+
+MATCH (n) RETURN n;
+
+----
+//graph
+  
+>1500 connections between them
+
+  Create ‘links’ between nodes that are related in a very obvious way.
+  
+  Edges demonstrate the relationship between nodes. If two nodes are related then they have an edge that connects them.
+  
+  At this stage, edges are bidirectional and carry equal weight. This will eventually have to be revised...
+
+//hidden
+[source,cypher]
+----
+
+
+//Clear all
+MATCH (n)-[r]->() DELETE n,r;
+MATCH (n) DELETE n;
+
+CREATE
+
+(ct:Thing {name:"Comp. Thinking", description:"This is the philosophy behind programming.",importance:10}),
+(data:Thing {name:"Data", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}),
+(web:Thing {name:"Web", description:"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."}),
+(web)-[:r]->(data),
+(data)-[:r]->(ct),
+(ct)-[:r]->(web),
+
+
+(html:Thing {name:"html"}),
+(html)-[:r]->(web),
+(web)-[:r]->(html),
+(js:Thing {name:"JavaScript"}),
+(js)-[:r]->(web),
+(js)-[:r]->(ct),
+(web)-[:r]->(js),
+(ct)-[:r]->(js),
+
+(python:Thing {name:"Python",type:"Skill"}),
+(python)-[:r]->(data),
+(python)-[:r]->(ct),
+(ct)-[:r]->(python),
+(data)-[:r]->(python),
+
+(cloud:Thing {name:"Cloud",type:"Object"}),
+(cloud)-[:r]->(data),
+(cloud)-[:r]->(web),
+(data)-[:r]->(cloud),
+(web)-[:r]->(cloud);
+
+MATCH (n)-[:r]->(b) CREATE UNIQUE (b)-[:r]->(n);
+MATCH (n) RETURN n;
+
+
+
+----
+//graph
+
+All scripts are uploaded on my decoded google drive. We should discuss moving that to a decoded github folder. 
+
 == Hierarchy
 
 === What are the categories?
