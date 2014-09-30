@@ -388,8 +388,6 @@ image::http://s25.postimg.org/ffzgwj9fj/data_pipeline.png[]
 
 image::http://s25.postimg.org/fh9epyb9b/security_themes.png[]
 
-=== How might we keep so many possibilities together?
-
 
 == What is this Graph?
 
