@@ -19,9 +19,55 @@ We would like to build an online learning platform with the following attributes
 . the set of topics that a user will explore will depend on who the user is
 . the delivery method (learning experience) will adjust to who the user is
 
+anchor:anchor-2[]
+
+anchor:anchor-2[]
+
 == So, creating a Knowledge Graph...
 
 === What is a graph?
+
+//hide
+[source,cypher]
+----
+
+CREATE
+
+(ct:Thing {name:"Comp. Thinking", description:"This is the philosophy behind programming.",importance:10}),
+(data:Thing {name:"Data", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}),
+(web:Thing {name:"Web", description:"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."}),
+(web)-[:r]->(data),
+(data)-[:r]->(ct),
+(ct)-[:r]->(web),
+
+
+(html:Thing {name:"html"}),
+(html)-[:r]->(web),
+(web)-[:r]->(html),
+(js:Thing {name:"JavaScript"}),
+(js)-[:r]->(web),
+(js)-[:r]->(ct),
+(web)-[:r]->(js),
+(ct)-[:r]->(js),
+
+(python:Thing {name:"Python",type:"Skill"}),
+(python)-[:r]->(data),
+(python)-[:r]->(ct),
+(ct)-[:r]->(python),
+(data)-[:r]->(python),
+
+(cloud:Thing {name:"Cloud",type:"Object"}),
+(cloud)-[:r]->(data),
+(cloud)-[:r]->(web),
+(data)-[:r]->(cloud),
+(web)-[:r]->(cloud);
+
+MATCH (n)-[:r]->(b) CREATE UNIQUE (b)-[:r]->(n);
+MATCH (n) RETURN n;
+
+----
+
+//graph
 
 === Why use one here?
 
