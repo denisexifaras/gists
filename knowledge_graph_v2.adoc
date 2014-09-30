@@ -1,6 +1,6 @@
 = Building a Knowledge Graph
 
-[[anchor-1]]
+anchor:anchor-2[]
 
 == Big Picture Motivation
 
