@@ -104,6 +104,19 @@ anchor:anchor-2[]
 
 === Tools
 
+*Neo4j* ``The world's leading Graph Database''
+  
+  We don't have to use a graph database. We can use document stores and use graph thoery externally. And we will to some extent. But it's still useful: allows us to store properties etc all in one place. Among other things, it will also hold pointers to the actual document stores.
+  (so it's more a database of databases)
+
+anchor:anchor-2[]
+
+*Cypher* Graph query language used with Neo4j. 
+
+  If we stick with Neo4j everyone will need to learn cypher...?
+  
+  As above, it's possible cypher will only be used for basic queries to get some initial output from the database and then a programming language will take over.
+
 === What have we collected?
 
 == Hierarchy
