@@ -69,6 +69,17 @@ MATCH (n) RETURN n;
 
 //graph
 
+[source,cypher]
+----
+
+MATCH (a)
+WHERE HAS(a.description)
+RETURN a;
+
+----
+
+//table
+
 === Why use one here?
 
 === Tools
