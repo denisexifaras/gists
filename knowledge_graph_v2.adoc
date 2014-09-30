@@ -370,23 +370,23 @@ MATCH (n) RETURN n;
 
 ==== Themes 
 
-image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
+image::http://s25.postimg.org/vn5rclgfz/themes.png[]
 
 ==== Topics
 
-image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
+image::http://s25.postimg.org/a20oozjpb/topics.png[]
 
 ==== People
 
-image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
+image::http://s25.postimg.org/wf8fbskn3/people_nodes.png[]
 
 ==== Data Pipeline
 
-image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
+image::http://s25.postimg.org/ffzgwj9fj/data_pipeline.png[]
 
 ==== Security Themes
 
-image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
+image::http://s25.postimg.org/fh9epyb9b/security_themes.png[]
 
 === How might we keep so many possibilities together?
 
