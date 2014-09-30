@@ -366,13 +366,30 @@ MATCH (n) RETURN n;
     
     (I think we might want to come up with a few more categories as the graph grows and we start adding content)
 
-== The Graph
+== The Graph 
 
-=== Summary Stats
+==== Themes 
 
-=== Category contents
+image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
 
-=== Examples
+==== Topics
+
+image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
+
+==== People
+
+image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
+
+==== Data Pipeline
+
+image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
+
+==== Security Themes
+
+image::http://s25.postimg.org/8p0kglg8v/data_1d.png[]
+
+=== How might we keep so many possibilities together?
+
 
 == What is this Graph?
 
