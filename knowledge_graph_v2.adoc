@@ -119,6 +119,8 @@ anchor:anchor-2[]
 
 === What have we collected?
 
+==== Nodes
+
 >300 topics by looking through all our presentations, table of contents from online books and brainstorming
 
   Obviously this is not exhaustive but was not meant to be (will revisit this in a sec)!
@@ -140,12 +142,14 @@ CREATE
 (html:Thing {name:"html"}),
 (js:Thing {name:"JavaScript"}),
 (python:Thing {name:"Python",type:"Skill"}),
-(cloud:Thing {name:"Cloud",type:"Object"}),
+(cloud:Thing {name:"Cloud",type:"Object"});
 
 MATCH (n) RETURN n;
 
 ----
 //graph
+
+==== Edges
   
 >1500 connections between them
 
@@ -158,7 +162,6 @@ MATCH (n) RETURN n;
 //hidden
 [source,cypher]
 ----
-
 
 //Clear all
 MATCH (n)-[r]->() DELETE n,r;
@@ -198,10 +201,10 @@ CREATE
 MATCH (n)-[:r]->(b) CREATE UNIQUE (b)-[:r]->(n);
 MATCH (n) RETURN n;
 
-
-
 ----
 //graph
+
+==== Where?
 
 All scripts are uploaded on my decoded google drive. We should discuss moving that to a decoded github folder. 
 
