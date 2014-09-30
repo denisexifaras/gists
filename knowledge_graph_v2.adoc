@@ -208,7 +208,110 @@ MATCH (n) RETURN n;
 
 All scripts are uploaded on my decoded google drive. We should discuss moving that to a decoded github folder. 
 
+anchor:anchor-2[]
+
+anchor:anchor-2[]
+
+
 == Hierarchy
+
+But not all topics have the same importance. For example, computational thinking is should have more weight than JavaScript. There is inherent hierarchy and nesting between our topics. Also, different nodes will carry different types of content (potentially).
+
+This should incorporated because:
+
+//list
+[loweralpha]
+. For journey management
+
+  Knowledge of `hierarchy' will allow us to create lessons (collections of nodes), for example.
+  
+  Some special nodes should help us jump around the graph more efficiently (faster navigation)
+
+. to inform on type of content and content delivery
+  
+  e.g. some nodes could just be jargon busters that can just pop-up whenever relevant
+  
+  e.g. some nodes could represent higher-level overview of big concepts that a user should *always* visit
+  
+  e.g. some nodes should link to online exercises 
+
+
+I can think of two ways for handling this.
+
+//list
+.Ordered
+
+. Using properties (e.g. (data {name:"Data", importance:10, type:"Major Theme"})
+
+. Using node labels: nodes are no longer the same thing but can represent different types of objects (for example we can have actors, movies and country of origin all represented by nodes in the same graph).
+
+  I have selected this 2nd approach -- this might change!
+
+//hidden
+[source,cypher]
+----
+MATCH (n)-[r]->() DELETE n,r;
+MATCH (n) DELETE n;
+
+CREATE
+
+(internet:Field {name:"Internet"}),
+(web:Theme {name:"Web"}),
+(web)-[:r]->(internet),
+(html:Topic {name:"html"}),
+(canvas:Topic {name:"html", parent_topic:"html"}),
+(css:Topic {name:"css"}),
+(js:Topic {name:"JavaScript"}),
+(html)-[:r]->(web),
+(css)-[:r]->(web),
+(html)-[:r]->(css),
+(js)-[:r]->(css),
+(js)-[:r]->(html),
+(js)-[:r]->(web),
+(sirTim:People {name:"Sir Tim Berners Lee"}),
+(html5cookbook:Book {name:"HTML5 Cookbook", url:"http://shop.oreilly.com/product/0636920016038.do", author:["Christopher Schmitt", "Kyle Simpson"], publisher: "O'Reilly Media"}),
+(sirTim)-[:r]->(html),
+(sirTim)-[:r]->(web),
+(ian_hickson:People {name:"Ian Hickson"}),
+(ian_hickson)-[:RT]->(html),
+(html5cookbook)-[:r]->(html),
+(jsonfiddle:Tools {name:"Json Fiddle", url:"http://jsfiddle.net/"}),
+(jsonfiddle)-[:r]->(js),
+(jsonfiddle)-[:r]->(web),
+(stackoverflow:Website {name:"StackOverflow", url:"http://stackoverflow.com/"}), //replace with w3c
+(stackoverflow)-[:r]->(js),
+(w3c:Website {name:"W3C",url:"http://www.w3.org/"}),
+(w3c)-[:r]->(sirTim);
+
+
+MATCH (a), (b)
+WHERE HAS (b.parent_topic)
+AND b.name in a.parent_topic //This works because b.name is NOT an array
+CREATE UNIQUE a-[r:RT]->b;
+
+MATCH (a), (b)
+WHERE HAS (a.parent_topic)
+AND b.name in a.parent_topic //This works because b.name is NOT an array
+CREATE UNIQUE a-[r:RT]->b;
+
+MATCH (a), (b)
+WHERE HAS (a.parent_topic)
+AND HAS (b.parent_topic)
+AND b.parent_topic = a.parent_topic
+AND NOT b.name = a.name //do we need this connection?
+CREATE UNIQUE a-[r:RT]->b;
+
+MATCH (a:People)-[:RT]->(c)-[:RT]->(b:People)
+WHERE NOT a.name = b.name
+CREATE UNIQUE (b)-[:RT]->(a);
+
+MATCH (a:Website), (b {name:"Web"})
+CREATE UNIQUE (b)-[:RT]->(a);
+
+MATCH (n)-[:r]->(b) CREATE UNIQUE (b)-[:r]->(n);
+MATCH (n) RETURN n;
+----
+//graph
 
 === What are the categories?
 
