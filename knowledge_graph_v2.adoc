@@ -7,6 +7,18 @@ anchor:anchor-2[]
 
 == Big Picture Motivation
 
+==== Internal Use
+
+create a reference database of "knowledge" that will map out the themes in digital enlightenment. This is interesting in its own right, for example in order to allow to modularise content for the day course or workshops. An extensive topic database can be used as a reference for creating "bespoke" courses, or for extending/modifying "standard" courses.
+
+==== For an online course
+
+We would like to build an online learning platform with the following attributes:
+[loweralpha]
+. it will contain all topics for digital enlightenment
+. the set of topics that a user will explore will depend on who the user is
+. the delivery method (learning experience) will adjust to who the user is
+
 == So, creating a Knowledge Graph...
 
 === What is a graph?
