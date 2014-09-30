@@ -215,9 +215,9 @@ anchor:anchor-2[]
 
 == Hierarchy
 
-But not all topics have the same importance. For example, computational thinking is should have more weight than JavaScript. There is inherent hierarchy and nesting between our topics. Also, different nodes will carry different types of content (potentially).
+So we have a topic space. But not all topics have the same importance. For example, computational thinking is should have more weight than JavaScript. There is inherent hierarchy and nesting between our topics. `Data pipeline' is a different thing to `API'.
 
-This should incorporated because:
+This should be incorporated because:
 
 //list
 [loweralpha]
@@ -226,6 +226,8 @@ This should incorporated because:
   Knowledge of `hierarchy' will allow us to create lessons (collections of nodes), for example.
   
   Some special nodes should help us jump around the graph more efficiently (faster navigation)
+  
+  All this suggests that we can more easily get more information on what could be the different relationships between nodes.
 
 . to inform on type of content and content delivery
   
@@ -314,6 +316,55 @@ MATCH (n) RETURN n;
 //graph
 
 === What are the categories?
+
+* Create a hierarchy of topics/concepts in order to construct the graph and better understand the landscape of digital enlightenment:
+
+  - *Fields* (e.g. Internet)
+  
+
+    `Fields' are the main areas that collectively capture all concepts in digital enlightenment. For someone to be
+    truly digitally enlightened, they must have sufficiently explored all `Fields'.
+
+         |      Comp. Thinking       |       Data      |      Security      |      Internet       |       Hardware      |
+
+  - *Themes* (e.g. Web)
+    
+    `Themes' are higher level concepts but ultimately belong under one or more of the `Fields'. Themes but are too conceptual to be classified as `Topics'.  `Themes' should be well known for us to decide which ones need to be covered/explored.
+    
+    There can be nesting within Themes. In this case there is `parent_topic' property.
+    
+    For example: 
+    Front-end is a Theme, but it is nested under Web.
+    Machine Learning is a Theme, but it is nested under Statistics.
+    Unsupervised Machine Learning is a Theme, but it is nested under Machine Learning.
+
+  - *Topics* (e.g. html, css) 
+  
+    The majority of the contents of the knowledge graph are probably going to be topics. These are specific learning items that may also have exercises etc. Just like with Themes, there can be lots of nesting here that can be explicitly incorporated using the parent_topic property.
+
+  - *Tools* (e.g. JS Fiddle) 
+  
+    Tools should be linked to all other topics, themes etc to which they are relevant. If a tool is online, there should also be a url and an edge to the Web.
+
+  - *Websites* (e.g. Stackoverflow, W3C)
+  
+    Websites should be linked to all other topics, themes etc to which they are relevant. Websites should also have a url.
+
+  - *People* (e.g. Ada Lovelace, Sir Tim)
+  
+    All(?) individuals that we refer to in our slides have been included here, and of course more may be added. People have a full name and they are linked to all the topics, themes, fields to which they have contributed.
+    
+    There are more `voiced' in the resources pages that haven't made it on the graph yet.
+
+  - *Books* (useful books; e.g. HTML5 Cookbook by O'reilly media)
+  
+    All books should have a url linking to something useful. Ideally we also need an author and publisher.
+
+  - *Cases*/*Definitions* (e.g. Heartbleed, Data Pipeline)
+  
+    Anything that is a bit too complicated to categorize or to niche has been temporarily set as `Cases'. I have this here because it's in the current version of the graph but ignore it!
+    
+    (I think we might want to come up with a few more categories as the graph grows and we start adding content)
 
 == The Graph
 
