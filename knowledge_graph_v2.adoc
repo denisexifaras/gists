@@ -74,13 +74,19 @@ MATCH (n) RETURN n;
 
 MATCH (a)
 WHERE HAS(a.description)
-RETURN a.name, a.description;
+RETURN a.name AS NAME, a.description AS DESCRIPTION;
 
 ----
 
 //table
 
 === Why use one here?
+
+//list
+. Intuitive way to think of relationships between topics
+. Completely flexbile to accommodate nested relationships
+. Allows us to explore/visualise more distant relationships
+. Lots of graph theory to help us create ``sensible'' journeys
 
 === Tools
 
