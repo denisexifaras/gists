@@ -1,7 +1,9 @@
 = Building a Knowledge Graph
 
 anchor:anchor-2[]
+
 anchor:anchor-2[]
+
 
 == Big Picture Motivation
 
