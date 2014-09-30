@@ -74,7 +74,7 @@ MATCH (n) RETURN n;
 
 MATCH (a)
 WHERE HAS(a.description)
-RETURN a;
+RETURN a.name, a.description;
 
 ----
 
