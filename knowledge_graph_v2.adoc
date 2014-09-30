@@ -123,9 +123,9 @@ anchor:anchor-2[]
 
 >300 topics by looking through all our presentations, table of contents from online books and brainstorming
 
-  Obviously this is not exhaustive but was not meant to be (will revisit this in a sec)!
+  Obviously this is not exhaustive but was not meant to be (There are tons of things that I have not included here (for example consider ToC from http://shop.oreilly.com/product/9780596805531.do)) (will revisit this in a sec)!
   
-  A node should be anything that we envisage will hold data (information/slides/exercises). This can be anything from a field to a case. There are tons of things that I have not included here (for example consider ToC from http://shop.oreilly.com/product/9780596805531.do) -- we should discuss the level of detail that this should have. For example should 'booleans' have their own node?
+  A node should be anything that we envisage will hold data (information/slides/exercises).
   
 //hidden
 [source,cypher]
@@ -151,13 +151,13 @@ MATCH (n) RETURN n;
 
 ==== Edges
   
->1500 connections between them
-
-  Create ‘links’ between nodes that are related in a very obvious way.
+>1500 connections between them: we create ‘links’ between nodes that are related in a very obvious way.
   
-  Edges demonstrate the relationship between nodes. If two nodes are related then they have an edge that connects them.
+  NOTE: Edges are are added only if two nodes are related in a very obvious way (for example Google Fusion has not been linked to anything). Obviously the more edges the more flexbile the journey through the graph can be, but this has to balance with a sensible number of possible journeys and journey architecture. For example, Google Doc -> Data Store but Google Doc !-> Data. This highlights the importance of looking further away then 1st degree relationships whenever we are exploring the graph.
   
   At this stage, edges are bidirectional and carry equal weight. This will eventually have to be revised...
+
+  *The process of adding edges should be supervised by more than one person....*
 
 //hidden
 [source,cypher]
