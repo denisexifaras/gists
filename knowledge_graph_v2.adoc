@@ -1,0 +1,37 @@
+= Step 0: Building a Knowledge Graph
+
+== Big Picture Motivation
+
+== So, creating a Knowledge Graph...
+
+=== What is a graph?
+
+=== Why use one here?
+
+=== Tools
+
+=== What have we collected?
+
+== Hierarchy
+
+=== What are the categories?
+
+== The Graph
+
+=== Summary Stats
+
+=== Category contents
+
+=== Examples
+
+== What is this Graph?
+
+== Next Steps
+
+== Also...
+
+
+
+
+
+
