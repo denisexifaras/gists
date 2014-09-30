@@ -80,13 +80,27 @@ RETURN a.name AS NAME, a.description AS DESCRIPTION;
 
 //table
 
+anchor:anchor-2[]
+
+
 === Why use one here?
 
 //list
 . Intuitive way to think of relationships between topics
+
+anchor:anchor-2[]
+
 . Completely flexbile to accommodate nested relationships
+
+anchor:anchor-2[]
+
 . Allows us to explore/visualise more distant relationships
+
+anchor:anchor-2[]
+
 . Lots of graph theory to help us create ``sensible'' journeys
+
+anchor:anchor-2[]
 
 === Tools
 
