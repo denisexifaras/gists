@@ -445,7 +445,7 @@ A) Add content either on graph or in a different db. Use this niche content to c
   
   Putting basic edges in place soon is also important for testing that the graph `reads well'.
   
-  Properties: difficulty, ...
+  Properties: difficulty, ... We must brainstorm on this (also for the recommendation engine)
   
   Obviously this can be refined later (and indeed we should start basic) but it's good to set up early!
   
