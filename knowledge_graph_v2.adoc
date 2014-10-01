@@ -422,13 +422,17 @@ anchor:anchor-2[]
 
 == Next Steps
 
-//list
-[loweralpha]
-. Add content either on graph or in MongoDB 
+anchor:anchor-2[]
 
-. Use existing Decoded content to start with? (16 steps, slides,...?)
+A. Add content either on graph or in MongoDB 
 
-. Which parts of the graph and to what depth?
+anchor:anchor-2[]
+
+B. Use existing Decoded content to start with? (16 steps, slides,...?)
+
+anchor:anchor-2[]
+
+C. Which parts of the graph and to what depth?
 
   We can have a light version everywhere (and then start testing an algorithm sooner, e.g. a Markov Chain) OR pick one subsection of the graph and add more advanced content, test links to external material etc sooner.
 
@@ -436,15 +440,21 @@ anchor:anchor-2[]
 
 == Also...
 
-//list
-[loweralpha]
-. Servers
+anchor:anchor-2[]
 
-. Themes
+A. Servers
 
-. Where are the slides etc?
+anchor:anchor-2[]
 
-. Building an API: who will access, when and how?
+B. Themes
+
+anchor:anchor-2[]
+
+C. Where are the slides etc?
+
+anchor:anchor-2[]
+
+D. Building an API: who will access, when and how?
 
 
 
