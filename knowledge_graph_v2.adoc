@@ -424,7 +424,7 @@ anchor:anchor-2[]
 
 //list
 [loweralpha]
-. Add content either on graph or in MongoDB
+. Add content either on graph or in MongoDB {nbsp}
 
 . Use existing Decoded content to start with? (16 steps, slides,...?)
 
