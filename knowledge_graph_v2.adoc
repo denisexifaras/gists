@@ -117,6 +117,11 @@ anchor:anchor-2[]
   
   As above, it's possible cypher will only be used for basic queries to get some initial output from the database and then a programming language will take over.
 
+anchor:anchor-2[]
+
+Most likely this will be a document store managed e.g. with c++ with neo4j providing a higher level management system.
+
+
 === What have we collected?
 
 ==== Nodes
