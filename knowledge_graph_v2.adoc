@@ -429,7 +429,7 @@ anchor:anchor-2[]
 
 anchor:anchor-2[]
 
-A Add content either on graph or in MongoDB. Use this niche content to create more meaningful, possible directed relationships!
+A) Add content either on graph or in MongoDB. Use this niche content to create more meaningful, possible directed relationships!
   
   We need to have a discussion on node importance/weight and types of edges. 
   
@@ -437,15 +437,17 @@ A Add content either on graph or in MongoDB. Use this niche content to create mo
   
   Edges: requires, the same as, belongs to, ....
   
+  Putting basic edges in place soon is also important for testing that the graph `reads well'.
+  
   Obviously this can be refined later (and indeed we should start basic) but it's good to set up early!
 
 anchor:anchor-2[]
 
-B Use existing Decoded content to start with? (16 steps, slides,...?)
+B) Use existing Decoded content to start with? (16 steps, slides,...?)
 
 anchor:anchor-2[]
 
-C Which parts of the graph and to what depth?
+C) Which parts of the graph and to what depth?
 
   We can have a light version everywhere (and then start testing an algorithm sooner, e.g. a Markov Chain) OR pick one subsection of the graph and add more advanced content, test links to external material etc sooner.
 
@@ -455,20 +457,23 @@ anchor:anchor-2[]
 
 anchor:anchor-2[]
 
-A Servers
+A) Servers
 
 anchor:anchor-2[]
 
-B Themes
+B) Themes
 
 anchor:anchor-2[]
 
-C Where are the slides etc?
+C) Where are the slides etc?
 
 anchor:anchor-2[]
 
-D Building an API: who will access, when and how?
+D) Building an API: who will access, when and how?
 
+anchor:anchor-2[]
+
+E) Queryability: brainstorm types of questions we want to ask the graph
 
 
 
