@@ -88,17 +88,21 @@ anchor:anchor-2[]
 //list
 . Intuitive way to think of relationships between topics
 
-anchor:anchor-2[]
+  anchor:anchor-2[]
 
 . Completely flexbile to accommodate nested relationships
 
-anchor:anchor-2[]
+  anchor:anchor-2[]
 
 . Allows us to explore/visualise more distant relationships
 
-anchor:anchor-2[]
+  anchor:anchor-2[]
 
 . Lots of graph theory to help us create ``sensible'' journeys
+
+  anchor:anchor-2[]
+
+. This method scales: allows us to build parts of at different times and at different levels of sophistication.
 
 anchor:anchor-2[]
 
