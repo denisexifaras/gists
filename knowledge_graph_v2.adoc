@@ -63,7 +63,7 @@ CREATE
 (web)-[:r]->(cloud);
 
 MATCH (n)-[:r]->(b) CREATE UNIQUE (b)-[:r]->(n);
-MATCH (n) RETURN n;
+MATCH (n)-[:r]->() RETURN n,r;
 
 ----
 
@@ -204,7 +204,7 @@ CREATE
 (web)-[:r]->(cloud);
 
 MATCH (n)-[:r]->(b) CREATE UNIQUE (b)-[:r]->(n);
-MATCH (n) RETURN n,r;
+MATCH (n)-[:r]->() RETURN n,r;
 
 ----
 //graph
@@ -316,7 +316,7 @@ MATCH (a:Website), (b {name:"Web"})
 CREATE UNIQUE (b)-[:RT]->(a);
 
 MATCH (n)-[:r]->(b) CREATE UNIQUE (b)-[:r]->(n);
-MATCH (n) RETURN n,r;
+MATCH (n)-[:r]->() RETURN n,r;
 ----
 //graph
 
