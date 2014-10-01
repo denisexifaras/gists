@@ -429,7 +429,15 @@ anchor:anchor-2[]
 
 anchor:anchor-2[]
 
-A Add content either on graph or in MongoDB 
+A Add content either on graph or in MongoDB. Use this niche content to create more meaningful, possible directed relationships!
+  
+  We need to have a discussion on node importance/weight and types of edges. 
+  
+  Weights: how important is it to visit this node? This will depend on the node ``connectivity'' but we can also attach an inherent weight to do with how important we judge it to be for digital enlightenment.
+  
+  Edges: requires, the same as, belongs to, ....
+  
+  Obviously this can be refined later (and indeed we should start basic) but it's good to set up early!
 
 anchor:anchor-2[]
 
