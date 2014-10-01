@@ -232,6 +232,8 @@ This should be incorporated because:
   
   Some special nodes should help us jump around the graph more efficiently (faster navigation)
   
+  Bigger concepts can be used to inform the recommendation engine
+  
   All this suggests that we can more easily get more information on what could be the different relationships between nodes.
 
 . to inform on type of content and content delivery
