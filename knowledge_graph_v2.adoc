@@ -474,7 +474,8 @@ B) *Themes* and *group exercises*
   Themes provide context for all the exercises. The same exercise/slide but in the context of a different theme would occupy a different node. The Theme can be a node property.
   For example: (knn_exercise {name:"KNNs", theme:"Movie", difficulty:5,  weight:1, centrality:1})
   
-  Exercises (e.g. building an app that monitors geolocation...) can be linked to (and then assume knowledge of) multiple links in the graph
+  Exercises (e.g. building an app that monitors geolocation...) can be linked to (and then assume knowledge of) multiple links in the graph. 
+  (this suggests we might end up having more node labels... This will be a very complex object!)
 
 anchor:anchor-2[]
 
@@ -490,6 +491,8 @@ E) Queryability: brainstorm types of questions we want to ask the graph
 
   Like the examples above. This test whether the graph architecture accommodates the types of functions that we want it for.
 
+anchor:anchor-2[]
 
+F) Not an issue yet, but eventually, we will need to ask questions like: what is an achievement? when has on learnt ``enough'' on a certain topic? Etc..
 
 
