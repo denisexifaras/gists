@@ -473,7 +473,7 @@ D) Building an API: who will access, when and how?
 
 anchor:anchor-2[]
 
-E) Queryability: brainstorm types of questions we want to ask the graph
+E) Queryability: brainstorm types of questions we want to ask the graph 
 
   Like the examples above. This test whether the graph architecture accommodates the types of functions that we want it for.
 
