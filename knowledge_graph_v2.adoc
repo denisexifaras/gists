@@ -425,7 +425,9 @@ anchor:anchor-2[]
 //list
 [loweralpha]
 . Add content either on graph or in MongoDB
+
 . Use existing Decoded content to start with? (16 steps, slides,...?)
+
 . Which parts of the graph and to what depth?
 
   We can have a light version everywhere (and then start testing an algorithm sooner, e.g. a Markov Chain) OR pick one subsection of the graph and add more advanced content, test links to external material etc sooner.
@@ -437,7 +439,12 @@ anchor:anchor-2[]
 //list
 [loweralpha]
 . Servers
+
 . Themes
+
+. Where are the slides etc?
+
+. Building an API: who will access, when and how?
 
 
 
