@@ -384,10 +384,17 @@ image::http://s25.postimg.org/wf8fbskn3/people_nodes.png[]
 
 image::http://s25.postimg.org/ffzgwj9fj/data_pipeline.png[]
 
+==== How can we get from Data to Coding in up three steps?
+
+image::http://s25.postimg.org/5x3k8aq2n/data_and_coding_2d_paths.png[]
+
 ==== Security Themes
 
 image::http://s25.postimg.org/fh9epyb9b/security_themes.png[]
 
+==== What is 3 steps away both from Security and Data?
+
+image::http://s25.postimg.org/zdj6apwfz/security_and_data_3steps.png[]
 
 == What is this Graph?
 
