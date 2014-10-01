@@ -266,7 +266,7 @@ CREATE
 (web:Theme {name:"Web"}),
 (web)-[:r]->(internet),
 (html:Topic {name:"html"}),
-(canvas:Topic {name:"html", parent_topic:"html"}),
+(canvas:Topic {name:"canvas", parent_topic:"html"}),
 (css:Topic {name:"css"}),
 (js:Topic {name:"JavaScript"}),
 (html)-[:r]->(web),
