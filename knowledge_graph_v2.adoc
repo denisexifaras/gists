@@ -431,11 +431,13 @@ anchor:anchor-2[]
 
 A) Add content either on graph or in MongoDB. Use this niche content to create more meaningful, possible directed relationships!
   
+  Different delivery methods for the same thing will have their own respective nodes
+  
   We need to have a discussion on node importance/weight and types of edges. 
   
   Weights: how important is it to visit this node? This will depend on the node ``connectivity'' but we can also attach an inherent weight to do with how important we judge it to be for digital enlightenment.
   
-  Edges: requires, the same as, similar to, belongs to, collaborates, ....
+  Edges: requires, the same as, identical, similar to, belongs to, collaborates, ....
   
   Edges can have properties too! e.g. the strength of `similar to' and `belongs to'
   
@@ -467,7 +469,12 @@ A) Servers
 
 anchor:anchor-2[]
 
-B) Themes
+B) *Themes* and *group exercises*
+
+  Themes provide context for all the exercises. The same exercise/slide but in the context of a different theme would occupy a different node. The Theme can be a node property.
+  For example: (knn_exercise {name:"KNNs", theme:"Movie", difficulty:5,  weight:1, centrality:1})
+  
+  Exercises (e.g. building an app that monitors geolocation...) can be linked to (and then assume knowledge of) multiple links in the graph
 
 anchor:anchor-2[]
 
