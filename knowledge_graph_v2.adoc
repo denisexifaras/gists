@@ -423,9 +423,9 @@ anchor:anchor-2[]
 == Next Steps
 
 //list
-[loweralpha]
-. Add content either on graph or in MongoDB {nbsp}
-{nbsp} +
+[loweralpha,2pt]
+. Add content either on graph or in MongoDB 
+
 . Use existing Decoded content to start with? (16 steps, slides,...?)
 
 . Which parts of the graph and to what depth?
