@@ -429,7 +429,7 @@ anchor:anchor-2[]
 
 anchor:anchor-2[]
 
-A) Add content either on graph or in MongoDB. Use this niche content to create more meaningful, possible directed relationships!
+A) Add content either on graph or in a different db. Use this niche content to create more meaningful, possible directed relationships!
   
   Different delivery methods for the same thing will have their own respective nodes
   
