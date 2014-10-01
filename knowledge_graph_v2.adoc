@@ -423,7 +423,7 @@ anchor:anchor-2[]
 == Next Steps
 
 //list
-[loweralpha,2pt]
+[loweralpha]
 . Add content either on graph or in MongoDB 
 
 . Use existing Decoded content to start with? (16 steps, slides,...?)
