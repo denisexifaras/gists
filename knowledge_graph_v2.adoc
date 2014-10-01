@@ -34,8 +34,8 @@ anchor:anchor-2[]
 CREATE
 
 (ct:Thing {name:"Comp. Thinking", description:"This is the philosophy behind programming.",importance:10}),
-(data:Thing {name:"Data", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}),
-(web:Thing {name:"Web", description:"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."}),
+(data:Thing {name:"Data", description:"Data is the new currency."}),
+(web:Thing {name:"Web", description:"Common protocol for sharing data on the internet."}),
 (web)-[:r]->(data),
 (data)-[:r]->(ct),
 (ct)-[:r]->(web),
@@ -63,7 +63,7 @@ CREATE
 (web)-[:r]->(cloud);
 
 MATCH (n)-[:r]->(b) CREATE UNIQUE (b)-[:r]->(n);
-MATCH (n)-[rel:r]->() RETURN n,rel; 
+MATCH (n)-[rel:r]->() RETURN rel, n; 
 
 ----
 
