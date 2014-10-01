@@ -63,7 +63,7 @@ CREATE
 (web)-[:r]->(cloud);
 
 MATCH (n)-[:r]->(b) CREATE UNIQUE (b)-[:r]->(n);
-MATCH (n)-[rel:r]->() RETURN n,rel;
+MATCH (n)-[rel:r]->() RETURN n,rel; 
 
 ----
 
