@@ -435,11 +435,17 @@ A) Add content either on graph or in MongoDB. Use this niche content to create m
   
   Weights: how important is it to visit this node? This will depend on the node ``connectivity'' but we can also attach an inherent weight to do with how important we judge it to be for digital enlightenment.
   
-  Edges: requires, the same as, belongs to, ....
+  Edges: requires, the same as, similar to, belongs to, collaborates, ....
+  
+  Edges can have properties too! e.g. the strength of `similar to' and `belongs to'
   
   Putting basic edges in place soon is also important for testing that the graph `reads well'.
   
+  Properties: difficulty, ...
+  
   Obviously this can be refined later (and indeed we should start basic) but it's good to set up early!
+  
+  NOTE: all this is still separate from the sorts of things our recommendation engine will consider... We just want to facilitate the work of the recommendation engine so we can have a framework on which we can impose rules
 
 anchor:anchor-2[]
 
