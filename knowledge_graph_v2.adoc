@@ -280,7 +280,7 @@ CREATE
 (sirTim)-[:r]->(html),
 (sirTim)-[:r]->(web),
 (ian_hickson:People {name:"Ian Hickson"}),
-(ian_hickson)-[:RT]->(html),
+(ian_hickson)-[:r]->(html),
 (html5cookbook)-[:r]->(html),
 (jsonfiddle:Tools {name:"Json Fiddle", url:"http://jsfiddle.net/"}),
 (jsonfiddle)-[:r]->(js),
@@ -294,26 +294,26 @@ CREATE
 MATCH (a), (b)
 WHERE HAS (b.parent_topic)
 AND b.name in a.parent_topic //This works because b.name is NOT an array
-CREATE UNIQUE a-[r:RT]->b;
+CREATE UNIQUE a-[:r]->b;
 
 MATCH (a), (b)
 WHERE HAS (a.parent_topic)
 AND b.name in a.parent_topic //This works because b.name is NOT an array
-CREATE UNIQUE a-[r:RT]->b;
+CREATE UNIQUE a-[:r]->b;
 
 MATCH (a), (b)
 WHERE HAS (a.parent_topic)
 AND HAS (b.parent_topic)
 AND b.parent_topic = a.parent_topic
 AND NOT b.name = a.name //do we need this connection?
-CREATE UNIQUE a-[r:RT]->b;
+CREATE UNIQUE a-[:r]->b;
 
-MATCH (a:People)-[:RT]->(c)-[:RT]->(b:People)
+MATCH (a:People)-[:r]->(c)-[:r]->(b:People)
 WHERE NOT a.name = b.name
-CREATE UNIQUE (b)-[:RT]->(a);
+CREATE UNIQUE (b)-[:r]->(a);
 
 MATCH (a:Website), (b {name:"Web"})
-CREATE UNIQUE (b)-[:RT]->(a);
+CREATE UNIQUE (b)-[:r]->(a);
 
 MATCH (n)-[:r]->(b) CREATE UNIQUE (b)-[:r]->(n);
 MATCH (n)-[rel:r]->() RETURN n,rel;
