@@ -396,7 +396,23 @@ image::http://s25.postimg.org/fh9epyb9b/security_themes.png[]
 
 image::http://s25.postimg.org/zdj6apwfz/security_and_data_3steps.png[]
 
+anchor:anchor-2[]
+
 == What is this Graph?
+
+It's the backbone:
+
+  jQuery ---> Jargon Buster/Overview
+              Online notes
+              Managing Html
+              Forms
+              Calendar
+              Hover-over
+              Drag and Drop
+              .......
+  All of these should have their own document store, get their own nodes on the graph. Each has its own importance score, weight, difficulty level....
+  
+  *This gives flexibility for different types of user and different delivery methods*
 
 == Next Steps
 
